@@ -1,0 +1,35 @@
+<html>
+<head>
+  <script type='text/javascript' src='https://www.gstatic.com/charts/loader.js'></script>
+  <script type='text/javascript'>
+    google.charts.load('current', {'packages':['timeline']});
+    google.charts.setOnLoadCallback(drawChart);
+
+    function drawChart() {
+      var data = new google.visualization.DataTable();
+      data.addColumn({ type: 'string', id:'Row Label'});
+      data.addColumn({ type: 'string', id:'Bar Label'});
+      data.addColumn({ type: 'string', role: 'style' });
+      data.addColumn({ type: 'date', id:'Start Date'});
+      data.addColumn({ type: 'date', id:'End Date'});
+    
+    data.addRows([['M01', 'J023', '#9A64A0', new Date(2023,3,18,11,40), new Date(2023,3,18,13,18)],['M01', 'J056', '#9A64A0', new Date(2023,3,18,17,10), new Date(2023,3,18,18,54)],['M01', 'J082', '#9A64A0', new Date(2023,3,18,21,30), new Date(2023,3,18,21,54)],['M01', 'J010', '#9A64A0', new Date(2023,3,18,9,30), new Date(2023,3,18,9,57)]]);
+
+      var options = {
+        timeline: { 
+            rowLabelStyle: { fontSize: 12 },
+            barLabelStyle: { fontSize: 8 } 
+        },
+        height: 610
+      };
+
+      var chart = new google.visualization.Timeline(document.getElementById('chart_div'));
+
+      chart.draw(data, options);
+    }
+  </script>
+</head>
+<body>
+  <div id='chart_div'></div>
+</body>
+</html>
