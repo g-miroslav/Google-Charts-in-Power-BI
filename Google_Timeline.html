@@ -13,7 +13,12 @@
       data.addColumn({ type: 'date', id:'Start Date'});
       data.addColumn({ type: 'date', id:'End Date'});
     
-    data.addRows([['M01', 'J023', '#9A64A0', new Date(2023,3,18,11,40), new Date(2023,3,18,13,18)],['M01', 'J056', '#9A64A0', new Date(2023,3,18,17,10), new Date(2023,3,18,18,54)],['M01', 'J082', '#9A64A0', new Date(2023,3,18,21,30), new Date(2023,3,18,21,54)],['M01', 'J010', '#9A64A0', new Date(2023,3,18,9,30), new Date(2023,3,18,9,57)]]);
+    data.addRows([
+      ['M01', 'J023', '#9A64A0', new Date(2023,3,18,11,40), new Date(2023,3,18,13,18)],
+      ['M01', 'J056', '#9A64A0', new Date(2023,3,18,17,10), new Date(2023,3,18,18,54)],
+      ['M01', 'J082', '#9A64A0', new Date(2023,3,18,21,30), new Date(2023,3,18,21,54)],
+      ['M01', 'J010', '#9A64A0', new Date(2023,3,18,9,30), new Date(2023,3,18,9,57)]
+    ]);
 
       var options = {
         timeline: { 
@@ -33,3 +38,4 @@
   <div id='chart_div'></div>
 </body>
 </html>
+
