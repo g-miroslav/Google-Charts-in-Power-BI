@@ -119,8 +119,8 @@ CONCATENATEX(
         "Milling"  , "#FFA500",
         "#000000"
     ) & "', " &
-    "new Date(" & YEAR([Start]) &","& MONTH([Start]) &","& DAY([Start]) &","& HOUR([Start]) &","& MINUTE([Start]) &"), "&
-    "new Date(" & YEAR([End]) &","& MONTH([End]) &","& DAY([End]) &","& HOUR([End]) &","& MINUTE([End]) &")"&
+    "new Date(" & YEAR([Start]) &","& MONTH([Start])-1 &","& DAY([Start]) &","& HOUR([Start]) &","& MINUTE([Start]) &"), "&
+    "new Date(" & YEAR([End]) &","& MONTH([End])-1 &","& DAY([End]) &","& HOUR([End]) &","& MINUTE([End]) &")"&
     "]",
     ",",
     [Machine_ID],
@@ -220,8 +220,8 @@ CONCATENATEX(
         "Milling"  , "#FFA500",
         "#000000"
     ) & "', " &
-    "new Date(" & YEAR([Start]) &","& MONTH([Start]) &","& DAY([Start]) &","& HOUR([Start]) &","& MINUTE([Start]) &"), "&
-    "new Date(" & YEAR([End]) &","& MONTH([End]) &","& DAY([End]) &","& HOUR([End]) &","& MINUTE([End]) &")"&
+    "new Date(" & YEAR([Start]) &","& MONTH([Start])-1 &","& DAY([Start]) &","& HOUR([Start]) &","& MINUTE([Start]) &"), "&
+    "new Date(" & YEAR([End]) &","& MONTH([End])-1 &","& DAY([End]) &","& HOUR([End]) &","& MINUTE([End]) &")"&
     "]",
     ",",
     [Machine_ID],
